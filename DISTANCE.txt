@@ -1,0 +1,9 @@
+ClrHome
+Input "ENTER X1 ",E
+Input "ENTER X2 ",F
+Input "ENTER Y1 ",G
+Input "ENTER Y2 ",H
+√((G-E)²+(H-F)²→D
+Disp "THE DISTANCE BETWEEN"
+Disp "THE TWO POINT IS"
+Disp D
