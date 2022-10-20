@@ -26,8 +26,19 @@ Then
             √(E)→S
             Disp "(X-"+S+")"
             Disp "(X+"+S+")"
+            Disp "END"
         End
     Else
     Disp "NOT VALID DOTS"
     EndIf
-End
+ElseIf (E=2)
+Then
+    //Do stuff for GCF
+    Disp "GCF"
+ElseIf (E=3)
+Then
+    //Do stuff for MEGAGCF
+    Disp "Stuff for MEGAGFC"
+EndIf
+
+Disp "THX 4 USING"
