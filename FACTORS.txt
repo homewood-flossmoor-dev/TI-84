@@ -1,0 +1,33 @@
+ClrHome
+Disp "1-DOTS 2-GCF 3-MEGAGCF"
+Input "ENTER TYPE OF EQUATION ",E
+Input "ENTER VAR",V
+Input "ENTER CONST",C
+
+Psqrt(V)
+Func
+//code to run goes here
+    √(E)→D
+    If(D*D=E)
+    Then
+        Return 1
+    Else
+        Return 0
+    EndIf
+EndFunc
+
+If (E=1)
+Then
+    If (C>0)
+    Then
+        Psqrt(C)→D
+        If(D=1)
+        Then
+            √(E)→S
+            Disp "(X-"+S+")"
+            Disp "(X+"+S+")"
+        End
+    Else
+    Disp "NOT VALID DOTS"
+    EndIf
+End
