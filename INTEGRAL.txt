@@ -1,0 +1,11 @@
+Input "F(X,Y)=",Str0
+Str0->{Y1}
+Input "A(X)=",Str0
+Str0->{Y2}
+Input "B(X)=",Str0
+Str0->{Y3}
+Input "A=",A
+Input "B=",B
+Input "STEPS=",N
+seq(fnInt({Y1},Y,{Y2},{Y3}),X,A,B+(B-A)/(2N),(B-A)/N)(B-A)/N
+{Sigma(Ans(I),I,1,N),Sigma(Ans(I),I,2,N+1)}
