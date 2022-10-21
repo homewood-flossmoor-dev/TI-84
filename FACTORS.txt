@@ -1,44 +1,55 @@
 ClrHome
 Disp "1-DOTS 2-GCF 3-MEGAGCF"
 Input "ENTER TYPE OF EQUATION ",E
+
+If E=1
+Then
+
 Input "ENTER VAR",V
 Input "ENTER CONST",C
-
-Psqrt(V)
-Func
-//code to run goes here
-    √(E)→D
-    If(D*D=E)
-    Then
-        Return 1
-    Else
-        Return 0
-    EndIf
-EndFunc
-
-If (E=1)
+If C>0
 Then
-    If (C>0)
-    Then
-        Psqrt(C)→D
-        If(D=1)
-        Then
-            √(E)→S
-            Disp "(X-"+S+")"
-            Disp "(X+"+S+")"
-            Disp "END"
-        End
-    Else
-    Disp "NOT VALID DOTS"
-    EndIf
-ElseIf (E=2)
-Then
-    //Do stuff for GCF
-    Disp "GCF"
-ElseIf (E=3)
-Then
-    //Do stuff for MEGAGCF
-    Disp "Stuff for MEGAGFC"
-EndIf
 
-Disp "THX 4 USING"
+√(C)→S
+iPart(S)-S→C
+If C=0
+Then
+Disp "(X-"+toString(S)+")"
+Disp "(X+"+toString(S)+")"
+
+Else
+Disp "CONST != PSQUARE"
+End
+
+Else
+
+Disp "NOT VALID ARG"
+
+End
+
+Else
+
+Disp "NOT VALID DOTS"
+End
+
+
+If X=2
+Then
+
+Disp "Ax²+Bx+C"
+Prompt A,B,C
+
+B*B→S
+4*A*C→I
+2*A→D
+­1*B→F
+
+√(S-I)→R
+
+(F-R)/D→P
+(F+R)/D→N
+
+Disp "Positive "+toString(P)
+Disp "Negative "+toString(N)
+
+End
