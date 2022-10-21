@@ -5,35 +5,37 @@ Input "ENTER TYPE OF EQUATION ",E
 If E=1
 Then
 
-Input "ENTER VAR",V
-Input "ENTER CONST",C
-If C>0
-Then
+Disp "Ax²-B"
+Disp "1 IF NO A VAL"
+Prompt A,B
 
-√(C)→S
+√(B)→S
 iPart(S)-S→C
-If C=0
+
+√(A)→P
+iPart(P)-P→L
+
+
+If C=0 and L=0 and A≠1
 Then
-Disp "(X-"+toString(S)+")"
+Disp "("+toString(P)+"X+"+toString(S)+")"
+Disp "("+toString(P)+"X-"+toString(S)+")"
+End
+
+If C=0 and A=1
+Then
 Disp "(X+"+toString(S)+")"
-
-Else
-Disp "CONST != PSQUARE"
+Disp "(X-"+toString(S)+")"
 End
 
-Else
-
-Disp "NOT VALID ARG"
+If C≠0
+Then
+Disp "NOT DOTS"
+End
 
 End
 
-Else
-
-Disp "NOT VALID DOTS"
-End
-
-
-If X=2
+If E=2
 Then
 
 Disp "Ax²+Bx+C"
@@ -51,5 +53,4 @@ B*B→S
 
 Disp "Positive "+toString(P)
 Disp "Negative "+toString(N)
-
 End
