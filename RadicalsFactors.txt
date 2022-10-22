@@ -1,7 +1,12 @@
+ClrHome
 Disp "--FACTOR RADICALS--"
+
+Input "Select your mode",E
+
+If E=1
+Then
 Disp "√A"
 Prompt A
-
 0→M
 0→N
 
@@ -18,3 +23,23 @@ End
 End
 
 Disp toString(√(M))+"√"+toString(N)
+End
+
+If E=2
+Then
+
+Disp "√A*b..."
+Prompt A
+Input "How many variables?",N
+
+For(X,0,N-1,1)
+
+Input "Enter Var #"+toString(X+1)+": ",V
+Input "Enter Exponent #"+toString(X+1)+": ",E
+
+End
+
+End
+
+
+
