@@ -2,6 +2,19 @@ Disp "--FACTOR RADICALS--"
 Disp "√A"
 Prompt A
 
-For(X,0,3,1)
-Disp X
+0→M
+0→N
+
+For(X,1,16,1)
+X*X→L
+remainder(A,L)→F
+
+If F=0 and M<L
+Then
+L→M
+A/L→N
 End
+
+End
+
+Disp toString(√(M))+"√"+toString(N)
