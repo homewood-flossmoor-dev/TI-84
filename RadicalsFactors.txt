@@ -1,0 +1,7 @@
+Disp "--FACTOR RADICALS--"
+Disp "√A"
+Prompt A
+
+For(X,0,3,1)
+Disp X
+End
