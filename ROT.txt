@@ -1,0 +1,18 @@
+Disp "1-90CW or 270CCW"
+Disp "2-90CCW or 270CW"
+Disp "3-180"
+Disp "4-x=y"
+
+Input "TYPE OF ROTATION",E
+Prompt X,Y
+
+If E=2 Then
+Disp (-1*Y)+","+(X)
+End
+
+If E=3 Then
+Disp (-1*X)+","+(-1*Y)
+End
+If E=4 Then
+Disp Y+","+X
+End
