@@ -41,5 +41,13 @@ End
 
 End
 
+If E=3
+Then
+For(X,1,16,1)
+X*X→L
+Disp L
+End
+
+End
 
 
