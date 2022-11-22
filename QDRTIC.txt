@@ -1,0 +1,7 @@
+Prompt A,B,C
+
+(-B+√(B²-4AC))/(2A)→S
+(-B-√(B²-4AC))/(2A)→R
+
+Disp "x1="+toString(S)
+Disp "x2="+toString(R)
