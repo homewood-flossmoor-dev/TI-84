@@ -1,0 +1,14 @@
+Prompt L,K
+
+{L,K}→dim([A])
+
+For(X,1,L,1)
+For(I,1,K,1)
+Disp "This Row"+toString(X)
+Disp "In the Column"+toString(I)
+Prompt V
+V→[A](X,I)
+End
+End
+
+Disp rref([A])Frac
