@@ -1,0 +1,9 @@
+Input "A:",A
+Input "B:",B
+Input "C:",C
+Disp "Doing -b/2a"
+­B/(2A)→X
+Disp "replace x on original"
+(AX^2)+(BX)+C→Y
+Disp "X=",X
+Disp "Y=",Y
