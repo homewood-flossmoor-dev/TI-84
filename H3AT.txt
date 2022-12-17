@@ -1,0 +1,4 @@
+Disp "Heat energy formula"
+Disp "x=initial temp"
+Disp "y=final tem"
+Prompt M,C,X,Y
