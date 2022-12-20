@@ -1,0 +1,452 @@
+Lbl A
+Menu("alg/trig/geo","perimetro",1,"circunferencia",2,"area",3,"superficie de area",4,"volumen",5,"teorema pitagoras",6,"next",B
+Lbl B
+Menu("alg/trig/geo","distance ",7,"slope of line",8,"quad formula",9,"square root",10,"line regretion",11,"matrice",12,"next",C
+Lbl C
+Menu("alg/trig/geo","cubes",13,"next",D
+Lbl D
+Menu("alg/trig/geo","trigonometry",Q,"calcbot 2.0",40,"goto 1st page",A1,"goto 2nd page",B1,"about program",C1,"sources",D1,"exit",X
+Lbl D1
+ClrHome
+Disp "Created by Juan Romero"
+Pause 
+ClrHome
+Goto C
+
+Lbl A1
+Goto A
+Lbl B1
+Goto B
+Lbl X
+ClrHome
+Send(A
+ClrHome
+Output(1,1,"Juan says bye lol"
+Stop
+Lbl 1
+
+Menu("perimeter","square",1A,"rectangle",3A,"back",A
+Lbl 1A
+ClrHome
+Output(1,1,"p=4s
+Pause 
+ClrHome
+Input "side ?",S
+S*4→A
+Disp A
+Pause 
+ClrHome
+Goto 1
+Lbl 3A
+
+ClrHome
+Output(1,1,"p=2(l+w)
+Pause 
+ClrHome
+Input "length?",A
+Input "width?",B
+2*(A+B)→C
+
+Disp C
+Pause 
+Goto 1
+Lbl 2
+Menu("circumference","circle",2A,"back",A
+Lbl 2A
+ClrHome
+Output(1,1,"c=2πr"
+Pause 
+ClrHome
+Input "radius?",A
+2*A→B
+B*π→C
+Disp C
+Pause 
+ClrHome
+Goto 2
+Lbl 3
+Menu("area","square",3C,"rectangle",4C,"triangle",5C,"trapezoid",6C,"circle",7C,"back",A
+Lbl 3C
+ClrHome
+Output(1,1,"a=s²
+Pause 
+ClrHome
+Input "side?",A
+A*A→B
+Disp B
+Pause 
+ClrHome
+Goto 3
+Lbl 4C
+ClrHome
+Output(1,1,"a=lw or a=bh
+Pause 
+ClrHome
+Input "length?",A
+Input "width?",B
+A*B→C
+Disp C
+Pause 
+ClrHome
+Goto 3
+Lbl 5C
+ClrHome
+Output(1,1,"a=bh/2"
+Pause 
+ClrHome
+Input "base?",A
+Input "height?",B
+A*B→C
+Disp C/2
+Pause 
+ClrHome
+Goto 3
+Lbl 6C
+ClrHome
+Output(1,1,"a=.5(b1+b2)h
+Pause 
+ClrHome
+Input "base 1?",A
+Input "base 2?",B
+Input "height?",C
+A+B→D
+D*.5→E
+E*C→F
+Disp F
+Pause 
+ClrHome
+Goto 3
+Lbl 7C
+ClrHome
+Output(1,1,"a=πr²
+Pause 
+ClrHome
+Input "radius?",A
+A²→B
+Bπ→C
+Disp C
+Pause 
+ClrHome
+Goto 3
+Lbl 4
+Menu("surface area","cube",4D,"cylinder (lat)",5D,"back",A
+Lbl 4D
+ClrHome
+Output(1,1,"s=6s²
+Pause 
+ClrHome
+Input "side?",A
+6*A→B
+B²→C
+Disp C
+Pause 
+ClrHome
+Goto 4
+Lbl 5D
+ClrHome
+Output(1,1,"s=2πrh
+Pause 
+ClrHome
+Input "radius?",A
+Input "height?",B
+A*B→C
+C*2→D
+Dπ→E
+Disp E
+Pause 
+ClrHome
+Goto 4
+Lbl 5
+Menu("volume","rectnglr prism",5E,"cylinder",6E,"cube",7E,"back",A
+Lbl 5E
+ClrHome
+Output(1,1,"v=lwh
+Pause 
+ClrHome
+Input "length?",A
+Input "width?",B
+Input "height?",C
+A*B*C→D
+Disp D
+Pause 
+ClrHome
+Goto 5
+Lbl 6E
+ClrHome
+Output(1,1,"v=πr²h
+Pause 
+ClrHome
+Input "radius?",A
+Input "height?",B
+A²→C
+C*B→D
+Dπ→E
+Disp E
+Pause 
+ClrHome
+Goto 5
+Lbl 7E
+ClrHome
+Output(1,1,"v=s^3
+Pause 
+ClrHome
+Input "side?",A
+A^3→B
+Disp B
+Pause 
+ClrHome
+Goto 5
+Lbl 6
+Menu("pythag","a²+b²=c²",6F,"c²-b²=a²",7F,"c²-a²=b²",8F,"back",A
+Lbl 6F
+ClrHome
+Input "A?",A
+Input "B?",B
+A²+B²→C
+C²→D
+√(D→E
+Disp √(E
+Pause :ClrHome
+Goto 6
+Lbl 7F
+Input "C?",C
+Input "B?",B
+C²-B²→A
+A²→D
+√(D→E
+Disp √(E
+Pause 
+ClrHome
+Goto 6
+Lbl 8F
+ClrHome
+Input "C?",C
+Input "A?",A
+C²-A²→B
+B²→D
+√(D→E
+Disp √(E
+Pause 
+ClrHome
+Goto 6
+Lbl 7
+ClrHome
+Input "x1?",A
+Input "x2?",B
+Input "y1?",C
+Input "y2?",D
+A-B→E
+
+C-D→F
+
+E+F→I
+√(I→J
+Disp J
+Pause 
+ClrHome
+Goto B
+Lbl 8
+ClrHome
+Input "x1?",A
+Input "x2?",B
+Input "y1?",C
+Input "y2?",D
+D-C→E
+B-A→F
+E/F→G
+Disp G
+Pause 
+ClrHome
+Goto B
+Lbl 10
+ClrHome
+Input "number?",A
+Fix 2
+ClrHome
+Disp "the square root
+Disp "of your number
+Disp A
+Disp "is 
+Disp √(A
+Pause 
+Float
+ClrHome
+Goto B
+Lbl 12
+ClrHome
+{2,2}→dim([A]
+{2,1}→dim([B]
+Output(5,1,"This Is [A]
+Input "1,1:",A
+Input "1,2:",B
+Input "2,1:",C
+Input "2,2:",D
+ClrHome
+Output(3,1,"This Is [B]
+Input "2,1:",E
+Input "2,2:",F
+A→[A](1,1
+B→[A](1,2
+C→[A](2,1
+D→[A](2,2
+E→[B](1,1
+F→[B](2,1
+ClrHome
+Disp [A][B]
+Pause 
+ClrHome
+Goto B
+Lbl 9
+ClrHome
+Input "A?",A
+Input "B?",B
+Input "C?",C
+­B+√(B²-4AC→E
+E/(2A)→F
+­B-√(B²-4AC→G
+G/(2A)→H
+Disp F
+Disp H
+Pause 
+ClrHome
+Goto B
+Lbl D1
+ClrHome
+Output(1,1,"source:
+Output(2,1,"taken from
+Output(3,1,"Preparing 4 EOC
+Output(4,1,"formula chart
+Output(6,1,"trig funtions:
+Output(7,1,"mike goulds
+Output(8,1,"2002 neo bhx (c)
+Pause 
+ClrHome
+Goto C
+Lbl 40
+ClrHome
+Output(7,1,"press mode to"
+Output(8,1,"go to main menu"
+Pause 
+ClrHome
+Lbl 91
+Input "",X
+Disp X
+Lbl 99
+getKey→K
+If K=22
+Goto C
+If K=105
+Goto 91
+Goto 99
+Lbl Q
+ClrHome
+Degree
+Menu("trigonometry","sin",F,"cos",X1,"tan",Z1,"back",M
+Lbl M
+Goto C
+Lbl F
+ClrHome
+Menu("trigonometry","no leg",H,"no hypotenuse",X,"back",E
+Lbl E
+Goto Q
+Lbl X
+Disp "deg (D),"
+Disp "and leg(L)"
+Prompt D,L
+L/sin(D)→A
+ClrHome
+Disp "hypotenuse:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl H
+Disp "deg (D),"
+Disp "hypotenuse (H)."
+Prompt D,H
+sin(D)*(H)→A
+Disp "leg:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl X1
+ClrHome
+Menu("trigonometry","no adjacent",O,"no hypotenuse",P,"back",66
+Lbl 66
+Goto Q
+Lbl P
+Disp "deg (D),"
+Disp "and leg known(L)"
+Prompt D,L
+L/cos(D)→A
+ClrHome
+Disp "hypotenese:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl O
+Disp "deg (D),"
+Disp "and hypo (H)."
+Prompt D,H
+cos(D)*H→A
+ClrHome
+Disp "leg:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl Z1
+ClrHome
+Menu("trigonometry","no opposite",S,"no adjacent",Y,"back",65
+Lbl 65
+Goto Q
+Lbl Y
+Disp "deg (D),"
+Disp "opposite (O).
+Prompt D,O
+O/tan(D)→A
+Disp "adjacent:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl S
+Disp "deg (D),"
+Disp "adjacent(A)
+Prompt D,A
+tan(D)*A→A
+Disp "opposite:"
+Disp round(A,3
+Pause 
+ClrHome
+Goto Q
+Lbl 11
+ClrHome
+DelVar L₁
+DelVar L₂
+ClrHome
+Input "L1 1:",A
+Input "L1 2:",B
+Input "L1 3:",C
+Input "L1 4:",D
+Input "L2 1:",E
+Input "L2 2:",F
+Input "L2 3:",G
+Input "L2 4:",H
+ClrHome
+A→L₁(1
+B→L₁(2
+C→L₁(3
+D→L₁(4
+E→L₂(1
+F→L₂(2
+G→L₂(3
+H→L₂(4
+Output(4,4,"Press enter
+Output(5,5,"after use
+Send(A
+SortA(L₂
+SortA(L₁
+QuadReg
