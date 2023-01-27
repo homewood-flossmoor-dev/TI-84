@@ -9,10 +9,10 @@ Disp "√A"
 Prompt A
 Prompt N
 0→M
-0→N
+0→P
 
 For(X,1,16,1)
-X^N→L
+X^P→L
 remainder(A,L)→F
 
 If F=0 and M<L
