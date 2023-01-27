@@ -7,11 +7,12 @@ If E=1
 Then
 Disp "√A"
 Prompt A
+Prompt N
 0→M
 0→N
 
 For(X,1,16,1)
-X*X→L
+X^N→L
 remainder(A,L)→F
 
 If F=0 and M<L
