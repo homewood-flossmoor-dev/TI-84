@@ -6,7 +6,7 @@ the code.
 
 ## Getting started
 * Download the TI Connect Software.
-* Plug the calculator to a your computer.
+* Plug the calculator to your computer.
 * Transfer a program that has been compiled (.8xp programs).
 * Press ``prgrm`` button on your TI, 
   you should be able to see all the programs you have transfered.
