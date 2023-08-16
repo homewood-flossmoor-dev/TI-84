@@ -1,0 +1,267 @@
+Lbl OK
+Menu("Choose a to[p][i]c","Atomic Structure",A,"Thermo/Kinetics",T,"Equilibrium/Electrochem",E,"Organic/Units",O,"Solubility Rules",S,"Ion Charges",I,"Quit",Q)
+Lbl A
+ClrHome
+Disp "VSEPR:Steric#,Lone Pairs,"
+Disp "Shape,Angle,Hybridization"
+Disp " "
+Disp "2,0,Linear,180,sp"
+Disp "3,0,ΔPlanar,120,sp²"
+Disp "3,1,Bent,<120,sp²"
+Disp "4,0,Tetrahedral,109.5,sp³"
+Disp "4,1,Tri.Pyramid,<109,sp³"
+Pause 
+ClrHome
+Disp "VSEPR:Steric#,Lone Pairs,"
+Disp "Shape,Angle,Hybridization"
+Disp " "
+Disp "4,2,Bent,<109,sp³"
+Disp "5,0,ΔBipyramid,120,90"
+Disp "5,1,Seesaw,<120,<90,sp³d"
+Disp "5,2,T-shape,<90,sp³d"
+Disp "5,3,Linear,180,sp³d"
+Pause 
+ClrHome
+Disp "VSEPR:Steric#,Lone Pairs,"
+Disp "Shape,Angle,Hybridization"
+Disp " "
+Disp "6,0,Octahedral,90,sp³d²"
+Disp "6,1,Sq.Pyramid,<90,sp³d²"
+Disp "6,2,Sq.Planar,90,sp³d²"
+Disp "6,3,T-shape,<90,sp³d²"
+Disp "6,4,Linear,180,sp³d²"
+Pause 
+ClrHome
+Disp "These show resonance:"
+Disp "NO₃-  O₃"
+Pause 
+ClrHome
+Disp "Periodic Trends"
+Disp "Increase L-R:"
+Disp "-Ionization energy"
+Disp "-Electronegativity"
+Disp " "
+Disp "Decrease L-R:"
+Disp "-Atomic radius"
+Disp "-Ionic radius"
+Pause 
+ClrHome
+Disp "Periodic Trends"
+Disp "Increase top-bottom:"
+Disp "-Atomic radius"
+Disp " "
+Disp "Decrease top-bottom:"
+Disp "-Ionization energy"
+Disp "-Electronegativity"
+Disp "Size: Anion>Cation"
+Pause 
+ClrHome
+Disp "M=DRT/P"
+Disp "M=molar mass"
+Disp "D=density"
+Disp "R=0.0821"
+Disp "P=pressure"
+Pause 
+Goto OK
+Lbl T
+ClrHome
+Disp "ln(k) = -Ea/RT + ln(A)"
+Disp "Zero: M/s = mol/L*s"
+Disp "First: 1/s"
+Disp "Second: L/mol*s"
+Pause 
+ClrHome
+Disp "ΔS, ΔH, spontaneous?"
+Disp "+,+, at high temps"
+Disp "-,-, at low temps"
+Disp "+,-, always"
+Disp "-,+, never"
+Disp " "
+Disp "Specific heat:"
+Disp "Higher c=less temp change"
+Pause 
+ClrHome
+Disp "Half-life equations"
+Disp "0: t=A/2k
+Disp "1: t=ln2/k"
+Disp "2: t=1/kA"
+Disp "0,1,2 = rxn orders"
+Disp "t=half-life"
+Disp "k=rate constant"
+Disp "A=initial concentration"
+Pause 
+Goto OK
+Lbl E
+ClrHome
+Disp "Strong acids:"
+Disp "HCl,HClO₄,HBr,HClO₃"
+Disp "HI,HIO₄,HNO₃,H₂SO₄"
+Disp " "
+Disp "Strong bases:"
+Disp "LiOH,NaOH,KOH"
+Disp "Ca(OH)₂,Sr(OH)₂,Ba(OH)₂"
+Pause 
+ClrHome
+Disp "Kp=Kc(RT)^Δn"
+Disp "R=0.0821"
+Disp "Δn=mol product-reactant"
+Disp "gaseous moles only"
+Pause 
+ClrHome
+Disp "Anode: Oxidation"
+Disp "- side,lower E₀,e- leave"
+Disp "SB anion (NO₃- enter)"
+Disp " "
+Disp "Cathode: R[e]duction"
+Disp "+ side,higher E₀,e- enter"
+Disp "SB cation (K+) enter"
+Disp "SB = Salt Bridge"
+Pause 
+ClrHome
+Disp "E=E₀-(RT lnQ)/nF"
+Disp "R=8.314, F=96485"
+Disp "E=E₀-(0.0592 logQ)/n"
+Pause 
+ClrHome
+Disp "Activity of Metals"
+Disp "Groups I & II + H₂0"
+Disp "All Others + "
+Disp "Non-oxidizing acid,eg HCl"
+Disp "Cu, Ag, Hg +"
+Disp "Oxidizing acid, eg HNO₃"
+Disp "Au, Pt, Ir +"
+Disp "Aqua Regia HNO₃+HCl"
+Pause 
+Goto OK
+Lbl O
+ClrHome
+Disp "Alcohol: R-OH"
+Disp "Aldehyde: R-C=O,-H"
+Disp "Amide: R-C=O,-NH₂"
+Disp "Carboxylic Acid: R-C=O,-OH"
+Disp "Ester: R-C=O,-O-R'"
+Disp "Ether: R-O-R'"
+Disp "Ketone: R-C=O, -R'"
+Pause 
+ClrHome
+Disp "Substituted Benzene:"
+Disp "Ortho- 1,2"
+Disp "Meta- 1,3"
+Disp "Para- 1,4"
+Disp " "
+Disp "Carbon prefixes 1-10:"
+Disp "meth,eth,prop,but,pent"
+Disp "hex,hept,oct,non,dec"
+Pause 
+ClrHome
+Disp "Alkane: C(n) H(2n+2)
+Disp "   single bond σ"
+Disp "Alkene: C(n) H(2n)
+Disp "   double bond σπ"
+Disp "Alkyne: C(n) H(2n-2)
+Disp "   triple bond σππ"
+Pause 
+ClrHome
+Disp "SI Unit Prefixes"
+Disp "Giga ₁₀^(9)"
+Disp "Mega ₁₀^(6)"
+Disp "Kilo ₁₀^(3)"
+Disp "Milli ₁₀^(-3)"
+Disp "Micro ₁₀^(-6)"
+Disp "Nano ₁₀^(-9)"
+Disp "Pico ₁₀^(-12)"
+Pause 
+Goto OK
+Lbl S
+ClrHome
+Disp "Always soluble:"
+Disp "NH₄+,NO₃-,ClO₃-,ClO₄-"
+Disp "C₂H₃O₂-,Alkalies"
+Disp " "
+Disp "Generally soluble:"
+Disp "Cl-,Br-,I-"
+Disp "   but Ag+,Pb2+,Hg₂2+"
+Disp "SO₄2- but Ca2+,"
+Disp "   Sr2+,Ba2+,Pb2+"
+Pause 
+ClrHome
+Disp "Generally insoluble:"
+Disp "CO₃2-,PO₄3-,S2-,SO₃2-"
+Disp "   but NH₄+,Alkalies"
+Disp " "
+Disp "O2-, OH- but Ca2+,"
+Disp "   Sr2+,Ba2+"
+Pause 
+Goto OK
+Lbl I
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Acetate C₂H₃O₂-"
+Disp "Ammonium NH₄+"
+Disp "Bicarbonate HCO₃-"
+Disp "Bisulfate HSO₄-"
+Disp "Bisulfide HSO₃-"
+Disp "Bromate BrO₃-"
+Disp "Bromite BrO₂-"
+Disp "Carbonate CO₃2-"
+Pause 
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Chlorate ClO₃-"
+Disp "Chlorite ClO₂-"
+Disp "Chromate CrO₄2-"
+Disp "Chromium Cr3+"
+Disp "Cupric Cu2+"
+Disp "Cuprous Cu+"
+Disp "Cyanide CN-"
+Disp "Dichromate Cr₂O₇2-"
+Pause 
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Ferric Fe3+"
+Disp "Ferrous Fe2+"
+Disp "Hypobromite BrO-"
+Disp "Hypochlorite ClO-"
+Disp "Hypoiodite IO-"
+Disp "Iodate IO₃-"
+Disp "Iodite IO₂-"
+Disp "Lead Pb2+"
+Pause 
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Manganese Mn2+"
+Disp "Mercuric Hg2+"
+Disp "Mercurous Hg₂2+"
+Disp "Nickel Ni2+"
+Disp "Nitrate NO₃-"
+Disp "Nitrite NO₂-"
+Disp "Oxalate C₂O₄2-"
+Disp "Perbromate BrO₄-"
+Pause 
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Perchlorate ClO₄-"
+Disp "Periodate IO₄-"
+Disp "Permanganate MnO₄-"
+Disp "Polyatomic Ions"
+Disp "Peroxide O₂2-"
+Disp "Phospha[t]e PO₄3-"
+Disp "Phosphite PO₃3-"
+Disp "Silver Ag+"
+Pause 
+ClrHome
+Disp "Polyatomic Ions"
+Disp "Stannic Sn4+"
+Disp "Stannous Sn2+"
+Disp "Sulfate SO₄2-"
+Disp "Polyatomic Ions"
+Disp "Sulfite SO₃2-"
+Disp "Thiocyanate SCN-"
+Disp "Thiosulfate S₂O₃2-"
+Disp "Zinc Zn2+"
+Pause 
+Goto OK
+Lbl Q
+ClrHome
+Disp "MEM Cleared"
+Stop
